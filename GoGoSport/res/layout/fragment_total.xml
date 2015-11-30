@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Activity顶部标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+          <ImageButton 
+            android:id="@+id/top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/headline"
+             android:onClick="showSlidmenu"/>
+        
+        
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/top_right_button"
+            android:text="发起活动"
+            android:textColor="@color/top_bar_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/top_bar_normal_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/home"
+                style="@style/tabs"
+                android:checked="true"
+                android:drawableTop="@drawable/home_selector"
+                android:text="首页" />
+            <!-- android:textColor="@drawable/total_color_selector" -->
+
+            <!-- <LinearLayout
+                android:layout_width="9dp"
+                android:layout_height="match_parent" /> -->
+
+            <RadioButton
+                android:id="@+id/place"
+                style="@style/tabs"
+                android:drawableTop="@drawable/place_selector"
+                android:text="场地" />
+
+           <!--  <LinearLayout
+                android:layout_width="9dp"
+                android:layout_height="match_parent" /> -->
+
+            <RadioButton
+                android:id="@+id/chat"
+                style="@style/tabs"
+                android:drawableTop="@drawable/chat_selector"
+                android:text="聊天" />
+
+          <!--   <LinearLayout
+                android:layout_width="9dp"
+                android:layout_height="match_parent" > -->
+
+             <!--    <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/unread_count_bg"
+                    android:text="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </LinearLayout> -->
+
+            <!-- <RadioButton
+                android:id="@+id/chatContact"
+                style="@style/tabs"
+                android:drawableTop="@drawable/myfriend_selector"
+                android:text="联系人" /> -->
+
+            <!-- <LinearLayout
+                android:layout_width="9dp"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/unread_address_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@drawable/unread_dot"
+                    android:visibility="visible" />
+            </LinearLayout> -->
+
+            <RadioButton
+                android:id="@+id/read"
+                style="@style/tabs"
+                android:drawableTop="@drawable/read_selector"
+                android:text="订阅" />
+
+          <!--   <LinearLayout
+                android:layout_width="9dp"
+                android:layout_height="match_parent" /> -->
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

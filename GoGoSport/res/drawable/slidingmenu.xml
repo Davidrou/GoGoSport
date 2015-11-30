@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/slidingmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/love1"
+            android:padding="@dimen/base_padding" >
+
+            <com.sportfun.usercenter.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/default_avatar"
+                app:border_color="@color/light" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/photo"
+                android:text="未设置"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layout_listitem"
+            android:layout_below="@id/top" >
+
+            <ImageView
+                android:id="@+id/information"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/usercentre_information" />
+
+            <Button
+                android:id="@+id/informationbutton"
+                style="@android:style/MediaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_vertical"
+                android:text="我的资料"
+                android:textSize="@dimen/usercentre_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_listitem"
+            android:layout_below="@id/relativeLayout1" >
+
+            <ImageView
+                android:id="@+id/sports"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/usercentre_sports" />
+
+            <Button
+                android:id="@+id/sportsbutton"
+                style="@android:style/MediaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sports"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/sports"
+                android:gravity="center_vertical"
+                android:text="我的活动"
+                android:textSize="@dimen/usercentre_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_listitem"
+            android:layout_below="@id/relativeLayout2" >
+
+            <ImageView
+                android:id="@+id/news"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/usercentre_news" />
+
+            <Button
+                android:id="@+id/newsbutton"
+                style="@android:style/MediaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/news"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/news"
+                android:gravity="center_vertical"
+                android:text="我的订阅"
+                android:textSize="@dimen/usercentre_text_size" />
+        </LinearLayout>
+
+          <ImageView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="63dp"
+            android:background="#C0C0C0" /> 
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/centre_button_exit_change"
+            android:onClick="logout"
+            android:text="@string/userceter_exit"
+            android:textSize="16sp" />
+
+    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+
+</LinearLayout>

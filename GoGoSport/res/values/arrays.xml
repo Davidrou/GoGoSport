@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sporttype">
+        <item >篮球</item>
+        <item >足球</item>
+    </string-array>
+    <string-array name="distance">
+        <item >50000</item>
+        <item >2000</item>
+        <item >1000</item>
+        <item >500</item>
+        <item >10000</item>
+    </string-array>
+    <string-array name="byWhat">
+        <item >byDiatance</item>
+        <item >byDistance2</item>
+    </string-array>
+    
+      <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+</resources>

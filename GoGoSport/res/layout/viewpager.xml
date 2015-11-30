@@ -1,0 +1,18 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/head"
+    tools:context="com.example.lunbotu.MainActivity$PlaceholderFragment" >
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+   >
+    </android.support.v4.view.ViewPager>
+    
+
+    
+</RelativeLayout>

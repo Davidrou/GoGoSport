@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/spins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar_normal_bg"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:background="@null"
+            android:entries="@array/sporttype" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="▼" />
+
+        <!--  -->
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+             android:background="@null"
+            android:entries="@array/distance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="▼" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg" />
+
+</LinearLayout>

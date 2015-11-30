@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bottom_line"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_listview_height"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    <com.sportfun.usercenter.CircleImageView
+            android:id="@+id/sporttype"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_launcher"
+            app:border_color="@color/light" />
+
+    <TextView
+        android:id="@+id/sportstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/mian_listview_content_text"
+        android:text="活动状态" /> 
+        
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="0dp"
+  		android:layout_height="@dimen/main_listview_height"
+  		android:layout_weight="1.5"
+    	android:orientation="vertical">
+        
+      <TextView
+        android:id="@+id/sporttitle"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="活动标题" />
+       
+    <TextView
+        android:id="@+id/sportplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+         android:textColor="@color/mian_listview_content_text"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/base_padding"
+        android:text="活动地点" />
+           
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="0dp"
+  		android:layout_height="@dimen/main_listview_height"
+  		android:layout_weight="1.2"
+    	android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:textColor="@color/mian_listview_content_text"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/base_padding"
+        android:text="距离" />
+            
+    <TextView
+        android:id="@+id/limitnum"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         android:textSize="@dimen/base_padding"
+          android:textColor="@color/mian_listview_content_text"
+        android:layout_marginTop="5dp"/>
+          
+        <TextView
+        android:id="@+id/startEndtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:layout_marginTop="5dp"
+         android:textSize="@dimen/base_padding"
+          android:textColor="@color/mian_listview_content_text"
+        android:text="开始结束时间" /> 
+    </LinearLayout>
+    
+</LinearLayout>
+  <!--  <TextView
+        android:id="@+id/joinnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sportplace"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:text="加入人数" />  -->
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明色 -->
+    <color name="transparent">#0000</color>
+    <!-- 标题栏字体颜色 -->
+    <color name="top_bar_text_color">#fff</color>
+    <!-- 浅色字体颜色 -->
+    <color name="light_text_color">#666666</color>
+    <!-- 默认背景色 -->
+    <color name="common_bg">#fcfcfc</color>
+    <!-- 标题栏默认背景色 -->
+    <color name="top_bar_normal_bg">#00acff</color>
+    <!-- 白色 -->
+    <color name="white">#fff</color>
+    <!-- 浅色 -->
+    <color name="light">#FFEEEEEE</color>
+    <!-- Google蓝绿红黄 -->
+    <color name="googlered">#e43d2d</color>
+    <color name="googleyellow">#f2c239</color>
+    <color name="googlegreen">#53af28</color>
+    <color name="googleblue">#367def</color>
+    
+     <color name="btn_gray_pressed_status">#b5b5b6</color>
+     <color name="btn_blue_normal">#1e90ff</color>
+      <color name="btn_blue_pressed">#0066FF</color>
+    <color name="weibo_listtab_off">#8d8d8d</color>
+    <color name="usercentre_text_color">#009ACD</color>
+    <color name="mian_listview_content_text">#C0C0C0</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+
+    <!-- toolbar默认红 -->
+    <color name="primary_color">#ff4c4b</color>
+
+</resources>

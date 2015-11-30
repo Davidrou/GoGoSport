@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sportfun.MatchActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+      <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/top_bar_normal_bg"
+            android:gravity="center"
+            android:text="速配"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <ImageButton 
+            android:id="@+id/top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/top_bar_normal_bg"
+            android:gravity="center_vertical"
+            android:text="请选择你想速配的类型~~~"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_zuqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_05" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="足球"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_yumaoqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_15" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="羽毛球" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_lanqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_32" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="篮球" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_wangqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_07" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="网球" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_pingpongqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_16" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="乒乓球" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/i_zhuoqiu"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_listitem"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/shaixuan1_09" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:text="桌球" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/holdsport_right" />
+    </LinearLayout>
+
+</LinearLayout>

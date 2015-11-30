@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/_head"
+        android:layout_toRightOf="@id/_head"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="好长的名字"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/_weizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="文汇人才公寓"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/_sex"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/sex0" />
+            
+            <TextView 
+                android:id="@+id/_age"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="默认年龄"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/_sex"/>
+
+            <TextView
+                android:id="@+id/_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:text="距离是多少"
+                android:textSize="12sp" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            
+            <TextView android:id="@+id/_sign"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:text="这好似我的个性签名"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

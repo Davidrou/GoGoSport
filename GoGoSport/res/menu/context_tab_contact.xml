@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/update_contacts"
+        android:title="更新联系人"/>
+     
+     <item
+        android:id="@+id/update_groups"
+        android:title="更新群组"/>
+</menu>
